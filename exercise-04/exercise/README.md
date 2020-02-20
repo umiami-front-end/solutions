@@ -18,7 +18,7 @@ Included in this repository are the following files.
 - zen-garden.html
 
 
-1. Use a *type* selector to style all text content (links excluded) on the page. Set the font-family to be `sans-serif`, the font size to 14 pixels and the line-height to 1.5.
+1. Use a *type* selector to style all text content on the page. Set the font-family to be `sans-serif`, the font size to 14 pixels and the line-height to 1.5.
 
 2. Use an *id* selector to style the `zen-intro` section to have a background color of `#eee`.
 
