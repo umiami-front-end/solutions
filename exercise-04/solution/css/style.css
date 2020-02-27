@@ -104,14 +104,14 @@ aside abbr[title] {
 }
 
 
-article > p:first-of-type:first-line {
+article > p:first-of-type::first-line {
 	font-weight: bold;
 }
 
 /*
   Another way to style the first line of every paragraph:
 
-  article > h3 + p:first-line {
+  article > h3 + p::first-line {
 	  font-weight: bold;
   }
 
