@@ -1,0 +1,144 @@
+body {
+  background: #e3dfdc;
+  color: #fff;
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin: 0;
+}
+
+#page-wrapper {
+  max-width: 720px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 0 10px;
+  box-shadow: 0 0 30px #666;
+}
+
+a {
+	color: #5a6635;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #2b351c;
+}
+
+
+header {
+  background-color: rgb(255,183,14);
+  color: #fff;
+  border-bottom: 10px solid #fff;
+  padding: 8px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header h2 {
+  display: none;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 200px;
+  grid-template-areas:
+    "summary  summary  summary"
+    "sidebar  content  content";
+  grid-column-gap: 10px;
+}
+
+#summary {
+  grid-area: summary;
+  background: url(../img/limes.png) no-repeat;
+	background-size: cover;
+  /* limes.png based on a photo by Nery Montenegro on Unsplash */
+}
+
+#summary article {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 0;
+}
+
+#summary p:first-child {
+  margin: 0;
+  background-color: rgb(197,209,155);
+  grid-column: 2 / -1;
+  padding: 8px;
+  font-size: 14px;
+  color: #5a6635;
+}
+
+#summary article p:last-child {
+  background-color: rgb(151,162,94);
+  grid-column: 1 / -1;
+  font-size: 12px;
+  margin: 0;
+  border-bottom: 10px solid #fff;
+  padding: 0 2px;
+}
+
+#sidebar {
+  grid-area: sidebar;
+  background-color: rgb(197,209,155);
+  font-size: 14px;
+  padding: 10px;
+}
+
+#design-selection nav a:first-child {
+  display: block;
+}
+
+#design-selection li {
+  margin-bottom: 10px;
+}
+
+#sidebar ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+#content {
+  grid-area: content;
+  background-color: rgb(165,183,122);
+  padding: 10px;
+}
+
+#content h3 {
+  background-color: rgb(197,209,155);
+}
+
+#content h3 > span {
+  background-color: rgb(165,183,122);
+  padding: 8px;
+  margin-left: 20px;
+}
+
+#content p[role=contentinfo] {
+  font-size: 10px;
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+article {
+  margin-bottom: 16px;
+}
+
+article h3 {
+  margin-top: 0;
+  color: rgb(235,239,225);
+  font-size: 20px;
+}
+
+footer {
+  grid-area: valid;
+  background-color: rgb(255,183,14);
+  border-top: 10px solid #fff;
+  padding: 4px;
+  font-size: 12px;
+}
+
+footer a {
+  color: #fff;
+}
