@@ -40,7 +40,7 @@ Included in this repository are the following files.
 
 **Now for some challenges!**
 
-11. Eliminate any styling on `abbr` tags nested inside the `aside`. (Set the color to `#fff` and remove the text decoration.)
+11. Eliminate any styling on `abbr` tags nested inside the `aside`. (Set the background color to `#fff` and remove the text decoration.)
 
 12. Style the first line of every first paragraph of an article to be bold. (There are *two!* ways to do this!)
 
