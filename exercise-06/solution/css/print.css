@@ -1,0 +1,45 @@
+* {
+  background-color: transparent;
+  color: black;
+}
+
+@page {
+  margin: 0.5in;
+}
+
+html {
+  font-size: 12pt;
+}
+
+body {
+  font-family: serif;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+a[href^="http"]:after {
+  content: " (" attr(href) ") ";
+}
+
+a[href$=".html"] {
+  display: none;
+}
+
+img {
+  display: none;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+nav {
+  display: none;
+}
+
+main {
+  display: block; /* overwrites display: grid; */
+}
