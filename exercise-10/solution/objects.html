@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	  <meta charset="UTF-8" />
+		<title>JavaScript Objects</title>
+		<link href="css/style.css" rel="stylesheet" />
+	</head>
+
+	<body>
+    <h1>JavaScript Objects</h1>
+
+    <script>
+      var flynn = {
+        species: "cat",
+        paws: 4,
+        colors: ["black", "brown", "gray", "white"],
+        shy: false,
+        cuddly: true
+      }
+
+      flynn['favoriteCatNipStrain'] = "Bastet Mau";
+      flynn['favoriteToy'] = "Mr. Fish";
+
+      flynn.pickyEater = false;
+      flynn.born = 2011;
+
+
+      // Answers
+
+      console.log(flynn.species);
+      console.log(flynn.shy);
+      console.log(flynn.favoriteCatNipStrain);
+
+      // We can show Flynn's coat colors in two ways:
+
+      console.log(flynn.colors[0]);
+      console.log(flynn.colors[1]);
+      console.log(flynn.colors[2]);
+      console.log(flynn.colors[3]);
+
+      // Or...
+
+      console.log(flynn.colors.join(", "));
+
+      console.log(typeof flynn['paws']);
+      console.log(typeof flynn['colors']); // surprised by this?
+      console.log(typeof flynn['cuddly']);
+
+    </script>
+
+    <!-- include code for questions 5-7 in the file below -->
+    <script src="js/objects.js"></script>
+	</body>
+</html>
