@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	  <meta charset="UTF-8" />
+		<title>Pixar Films</title>
+		<link href="css/style.css" rel="stylesheet" />
+	</head>
+
+	<body>
+
+    <h1>Pixar Films</h1>
+
+    <script src="js/objects.js"></script>
+    <script>
+
+      document.write("<ul>");
+
+      for(var film in pixarMovies) {
+        // What is being returned exactly? Let's test in the console.
+        console.log(film);
+
+        // That's just each film. :( How do we get the data we want about
+        // each film?
+        console.log(pixarMovies[film]);
+
+        // Ah ha! Now we can get the data from each film!
+
+        // Now we print the data to the screen:
+        document.write("<li>" + pixarMovies[film]["title"] + ": " + pixarMovies[film]["year"] + "</li>");
+      }
+
+      document.write("</ul>");
+
+
+      // Remember, each film in pixarMovies is an object. When we
+      // iterate over pixarMovies, we store one film at a time in
+      // the step of the loop we are on. (So, the first iteration of
+      // the loop holds all the data for toyStory, the second for
+      // aBugsLife, etc.)
+
+      // In order to refer to each individual film, which is stored
+      // in the "counter" variable 'film', we use pixarFilms[film].
+
+      // But what about the data for each film? The property names
+      // (i.e. title, year, actors, etc.) are standard throughout
+      // the object. We use strings in this case -- "title" and "year".
+
+      // If we think of the object as a tree, the path to the data
+      // we seek is a little something like this:
+
+      // pixarMovies -> toyStory -> title
+      // pixarMovies -> toyStory -> year
+      // pixarMovies -> aBugsLife -> title
+      // pixarMovies -> aBugsLife -> year
+
+      // Notice only the film name changes! That's why we the 'film'
+      // variable and not something static.
+
+      // WHY?! are we going through such pain with this example?
+      // Because one of the KEY uses of loops over objects and
+      // arrays is to process JSON. It is a popular way of being
+      // able to take data -- just like pixarMovies! -- and
+      // processing it for display on the web!
+
+      // We will discuss that at a later date. But for now, practice
+      // iterating over arrays and objects! It's extremely valuable!
+
+    </script>
+	</body>
+</html>
