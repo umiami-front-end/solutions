@@ -1,0 +1,18 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+label {
+  display: grid;
+  grid-template-columns: 5rem 10rem;
+  margin-bottom: 1rem;
+}
+
+
+section {
+  margin-bottom: 3rem;
+}

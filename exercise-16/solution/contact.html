@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact Us</title>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+
+    <main>
+
+      <section>
+        <form>
+          <label for="name">Name:
+            <input type="text" id="name" name="name" />
+          </label>
+
+          <label for="address">Address:
+            <input type="text" id="address" name="address" />
+          </label>
+
+          <label for="phone">Phone:
+            <input type="tel" id="phone" name="phone" />
+          </label>
+
+          <label for="email">E-mail:
+            <input type="text" id="email" name="email" />
+          </label>
+
+          <input type="submit" id="submit" value="submit" />
+          <input type="button" id="reset" value="reset" />
+        </form>
+      </section>
+
+      <section>
+        <h2>You entered:</h2>
+
+        <p><strong>Name:</strong> <span></span></p>
+        <p><strong>Address:</strong> <span></span></p>
+        <p><strong>Phone:</strong> <span></span></p>
+        <p><strong>E-mail:</strong> <span></span></p>
+      </section>
+    </main>
+
+    <script src="js/contact.js"></script>
+  </body>
+</html>
