@@ -1,0 +1,29 @@
+body {
+  background: url("../img/background.png");
+  font-size: 16px;
+  color: #222;
+  font-family: sans-serif;
+}
+
+header {
+  background: #eee;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 0.5em;
+}
+
+header p,
+header form {
+  display: inline-block;
+}
+
+#box {
+  position: relative;
+  top: 100px;
+  background: url("../img/nyan-cat.png") no-repeat;
+  width: 309px;
+  height: 171px;
+}
